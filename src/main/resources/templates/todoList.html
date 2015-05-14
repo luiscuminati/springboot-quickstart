@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title th:text="#{todoList.title}"></title>
+    <link th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+    <link th:href="@{/css/style.css}" rel="stylesheet" media="screen"/>
+
+    <script th:src="@{/webjars/jquery/2.1.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/3.2.0/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/main.js}"></script>
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<div class="container">
+    <div id="todos-list" class="col-md-6 col-md-offset-3" th:each="todo : ${todos}">
+        <div th:replace="fragments/todos :: todo_block(${todo})"></div>
+    </div>
+</div>
+
+<div th:include="fragments/footer :: footer"></div>
+
+</body>
+</html>

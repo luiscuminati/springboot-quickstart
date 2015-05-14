@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+
+<div th:fragment="todo_block(todo)">
+    <div class="row">
+        <div class="todo panel col-md-12">
+            <div class="panel-heading" th:text="#{todoList.todo.id(${todo.id})}"></div>
+            <div class="panel-body">
+                <div class="col-md-12" th:text="${todo.todoText}"></div>
+                <div class="col-md-12" th:text="#{createdAt} + ': ' + ${#calendars.format(todo.created,'dd/MM/yyyy')}"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

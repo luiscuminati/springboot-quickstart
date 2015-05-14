@@ -1,0 +1,64 @@
+/*******************
+ * BODY
+********************/
+body {
+    background-color: #f1f2f7;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #fca531;
+}
+
+#footer {
+    margin-top: 50px;
+}
+
+/*******************
+ * Navbar
+********************/
+.navbar {
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar-inverse {
+    background-color: #242424;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #BBB;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #FCA531;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #fca531;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #fca531;
+}
+
+/*******
+*/
+.todo.panel {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 0;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border: 1px solid rgb(234, 234, 234);
+}
+
+.todo.panel > .panel-heading {
+    color: #797979;
+    font-size: 16px;
+    border-bottom: 1px solid #eff2f7;
+}
